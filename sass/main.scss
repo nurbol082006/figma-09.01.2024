@@ -10,6 +10,9 @@ a {
   text-decoration: none;
   color: black;
 }
+a:hover {
+  color: blue;
+}
 .container {
   width: 1240px;
   padding: 0 20px;
@@ -38,6 +41,10 @@ a {
     font-size: 16px;
     border-radius: 10px;
   }
+  &__button:hover {
+    background-color: red;
+    border-radius: 10px 10px;
+  }
 }
 .nature {
   display: flex;
@@ -61,19 +68,20 @@ a {
     padding: 10px 20px;
     border-radius: 7px;
   }
+  &__text__h2__p_button:hover{
+    background-color: red;
+    border: none;
+  }
 }
 .nature-img {
-  gap: 50px;
+  display: flex;
+  gap: 20px;
   margin-top: 200px;
   &__img-1 {
-    margin-right: 50px;
     height: 525px;
   }
   &__img-2 {
-    position: relative;
-    top: 83px;
-    right: 25px;
-    height: 525px;
+    margin-top: 60px;
   }
   &__img-3 {
     height: 525px;
@@ -106,13 +114,18 @@ a {
       margin-top: 35px;
       border-radius: 5px;
     }
+    &__btn:hover {
+      background-color: #fab047;
+      border-radius: 10px 50px;
+      transform: rotate(360deg);
+      transition: 2.5s;
+    }
   }
 }
 .setion {
   height: 420px;
   .cabin {
     height: 383px;
-    display: inline-block;
     &__text {
       font-size: 36px;
       padding-bottom: 30px;
@@ -123,12 +136,11 @@ a {
     }
   }
   .image {
-    display: inline-block;
-    position: relative;
-    top: 72px;
-    left: 360px;
+    display: flex;
     &__src {
       height: 300px;
+      margin-left: 896px;
+      margin-top: -447px;
     }
   }
 }
@@ -170,6 +182,12 @@ a {
     padding: 15px 20px;
     margin-bottom: 50px;
     border-radius: 6px;
+  }
+  &__btn:hover {
+    background-color: azure;
+    color: red;
+    border: none;
+    opacity: 0.5;
   }
 }
 .single {
@@ -235,6 +253,12 @@ a {
     padding: 8px 20px;
     color: #fff;
     border-radius: 5px;
+  }
+  &__btn:hover {
+    background-color: aqua;
+    border: none;
+    border-radius: 10px 10px;
+    transition: 0.5s;
   }
 }
 
@@ -345,7 +369,7 @@ a {
 }
 .best {
   position: absolute;
-  top: 4366px;
+  top: 4494px;
   background-color: #192252;
   left: 154px;
   &__h2 {
@@ -359,12 +383,15 @@ a {
     opacity: 60%;
     padding-bottom: 15px;
   }
+  &__p:hover {
+    color: aqua;
+  }
   .imgler {
     width: 132px;
     display: flex;
     justify-content: space-between;
-    }
   }
+}
 
 .rooms {
   display: flex;
@@ -386,6 +413,9 @@ a {
       font-size: 16px;
       opacity: 60%;
     }
+    &__p2:hover {
+      color: aqua;
+    }
   }
   .custom {
     line-height: 30px;
@@ -398,6 +428,9 @@ a {
       color: #d9dbde;
       font-size: 16px;
       opacity: 60%;
+    }
+    &__p2:hover {
+      color: aqua;
     }
   }
   .time {
@@ -412,6 +445,9 @@ a {
       font-size: 16px;
       opacity: 60%;
     }
+    &__p2:hover {
+      color: aqua;
+    }
   }
 }
 .main {
@@ -419,5 +455,5 @@ a {
   background-color: #192252;
   justify-content: space-around;
   height: 350px;
-  display: flex;
+  width: 100%;
 }
